@@ -125,7 +125,7 @@ exec 1<&4
 # # Redirecting errors
 # exec 2<&5
 
-if [ -f task4_1.out ] ; then
+if [ -e task4_1.out ] ; then
     exit 0
 fi
 exit 1
