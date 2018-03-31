@@ -102,16 +102,21 @@ for word in "${namenet[@]}"
         addressnet[$i]=${addressnet[i]}' -'
     fi
     # By name search all IP4По названию ищет все IP4
+    j=0
     for numip in $( ip address show $word | grep -T 'inet '| awk '{print $2}' )
         do
         addressnet[$i]=${addressnet[i]}' '${numip}
+        if [[ $j > 0 ]] ; then
+            addressnet[$i]=${addressnet[i]}','
+        ((j ++))
+        fi
     done
     ((i ++))
 done
-((i --))
-for j  in $(seq 0 $i)
+
+for addressline  in "${addressnet[@]}"
     do
-    echo "${addressnet[j]}"
+    echo "$addressline"
 done
 
 # Redirecting output
