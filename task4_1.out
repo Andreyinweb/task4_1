@@ -1,6 +1,6 @@
 --- Hardware ---
 CPU: Intel(R) Pentium(R) Dual  CPU  E2140  @ 1.60GHz
-RAM: 2549328kB 
+RAM: 2549328KB 
 Motherboard: MSI MS-7267
 System Serial Number: Unknown
 --- System ---
@@ -8,8 +8,8 @@ OS Distribution: Ubuntu 17.10
 Kernel version: 4.13.0-37-generic
 Installation date: 2017-10-28 23:41:35
 Hostname: stariy-MS-7267
-Uptime: 3 hours, 11 minutes
-Processes running: 215
+Uptime: 12 hours, 20 minutes
+Processes running: 227
 User logged in: 1
 --- Network ---
 lo: 127.0.0.1/8

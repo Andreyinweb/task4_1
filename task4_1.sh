@@ -12,7 +12,7 @@ exec 1>task4_1.out
 
 echo "--- Hardware ---"
 echo "CPU: $(cat /proc/cpuinfo | grep -m 1 'model name' | sed 's/model name//' | sed 's/: //' | sed 's/\t//')"
-echo "RAM: $(cat /proc/meminfo | grep 'MemTotal' | sed 's/MemTotal//' | tr -d ':' | tr -d ' ') "
+echo "RAM: $(cat /proc/meminfo | grep 'MemTotal' | sed 's/MemTotal//' | tr -d ':' | tr -d ' ' | tr '[:lower:]' '[:upper:]' ) "
 exec 6<&1
 exec 1>/dev/null
 # Finding information about the motherboard. Поиск сведений о материнской плате.
