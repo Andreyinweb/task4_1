@@ -1,6 +1,7 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
-          #/bin/bash
+         #/usr/bin/env bash
+
 # Redirecting output
 exec 4<&1
 exec 1>task4_1.out
